@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyledBurger } from './Burger.styled';
 
-const Burger = () => {
+interface BurgerInterface {
+	open: boolean;
+	setOpen: (boolean: boolean) => void;
+}
+
+const Burger = (props:BurgerInterface) => {
   return (
     <StyledBurger>
       <div />

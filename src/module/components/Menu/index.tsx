@@ -1,7 +1,12 @@
 import React from 'react';
 import { StyledMenu } from './Menu.styled';
 
-const Menu = () => {
+interface MenuInterface {
+	open: boolean;
+	setOpen: (boolean: boolean) => void;
+}
+
+const Menu = (props:MenuInterface) => {
   return (
     <StyledMenu>
       <a href="/">
