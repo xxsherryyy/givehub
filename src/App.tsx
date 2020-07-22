@@ -9,8 +9,10 @@ import { About, Home } from 'module/pages';
 
 
 
+
 const App = () => {
 
+  const menuId = "main-menu";
 	const node = useRef<HTMLDivElement>(null);
 	useOnClickOutside(node, () => setOpen(false));
 	const [open, setOpen] = React.useState(false);
@@ -21,11 +23,6 @@ const App = () => {
 					<>
 						<GlobalStyles />
 						<nav>
-							<div ref={node}>
-								<Burger open={open} setOpen={setOpen} />
-								<Menu open={open} setOpen={setOpen} />
-							</div>
-
 							<ul>
 								<li>
 									<Link to="/">Home</Link>
@@ -34,6 +31,12 @@ const App = () => {
 									<Link to="/about">About</Link>
 								</li>
 							</ul>
+							<div ref={node}>
+								<Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+								<Menu open={open} setOpen={setOpen} />
+							</div>
+
+							
 						</nav>
 					</>
 				</ThemeProvider>

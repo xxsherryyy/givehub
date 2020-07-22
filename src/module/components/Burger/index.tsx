@@ -7,8 +7,10 @@ interface BurgerInterface {
 }
 
 const Burger = (props:BurgerInterface) => {
+  const [open, setOpen] = React.useState(false);
+  const isExpanded = open ? true : false;
   return (
-    <StyledBurger>
+    <StyledBurger aria-label="Toggle menu" aria-expanded={isExpanded} open={open} onClick={() => setOpen(!open)} {...props}>
       <div />
       <div />
       <div />

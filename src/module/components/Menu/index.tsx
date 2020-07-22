@@ -9,7 +9,7 @@ interface MenuInterface {
 const Menu = (props:MenuInterface) => {
   return (
     <StyledMenu>
-      <a href="/">
+      <a href="/about">
         <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
         About us
       </a>
