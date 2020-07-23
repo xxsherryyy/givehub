@@ -5,7 +5,7 @@ import { GlobalStyles } from './global';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { theme } from './theme';
 import { Burger, Menu } from 'module/components';
-import { About, Home } from 'module/pages';
+import { About, Home, Contact} from 'module/pages';
 
 
 
@@ -43,6 +43,7 @@ const App = () => {
 				<Switch>
 					<Route path="/about" component={About} />
 					<Route path="/" component={Home} />
+					<Route path="/contact" component={Contact} /> 
 				</Switch>
 			</Suspense>
 		</Router>

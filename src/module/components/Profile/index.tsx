@@ -3,6 +3,7 @@ import { StyledProfile } from './Profile.styled';
 import chuks from '../../assets/chuks.jpeg';
 import vivek from '../../assets/vivek.jpeg';
 import sherry from '../../assets/sherry.jpeg';
+import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 
 const Profile = () => {
 	return (
@@ -22,14 +23,17 @@ const Profile = () => {
 						<div>
 							<img className="img-circle" src={chuks} alt="chuks"></img>
 							<div className="splitSection">Chuks</div>
+							<a target="_blank" href="https://www.linkedin.com/in/chuks-grinage"><Linkedin /></a>
 						</div>
 						<div>
 						<img className="img-circle" src={sherry} alt="sherry"></img>
 						<div className="splitSection" >Sherry</div>
+						<a target="_blank" href="https://www.linkedin.com/in/sherry-x-yang"><Linkedin /></a>
 						</div>
 						<div>
 							<img className="img-circle" src={vivek} alt="vivek"></img>
 							<div className="splitSection">Vivek</div>
+							<a target="_blank" href="https://www.linkedin.com/in/vputtaparthi"><Linkedin /></a>
 						</div>
 						
 

@@ -10,6 +10,7 @@ export const StyledProfile = styled.div`
     font-style: normal;
     font-size: 50px;
     text-align: center;
+    color: #d9fff0;
 }
 
 #about [data-bigletter]:before{
@@ -26,6 +27,7 @@ margin-left: 5vw;
 margin-right: 5vw;
 margin-bottom: 5vw;
 margin-top: 3vw;
+color: #ffff;
 
 line-height: 1.8;
 }
