@@ -4,11 +4,30 @@ export const StyledProfile = styled.div`
 
 #about{
     height: 90vh;
-    margin-top:650px;
+    margin-top:65px;
+    font-family: arya-triple-alt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
 }
 
 #about [data-bigletter]:before{
     left: 10%;
+
+}
+
+.blurb {
+    font-family: gill-sans-nova,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+margin-left: 5vw;
+margin-right: 5vw;
+margin-bottom: 5vw;
+margin-top: 3vw;
+
+line-height: 1.8;
 }
 
 .img-circle{
@@ -21,20 +40,16 @@ export const StyledProfile = styled.div`
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
 }
- 
+
+.sectionInner {
+    margin-bottom: 5vm;
+}
+
 .splitSection{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
+    margin-bottom: 5%;
 }
-
-.splitLeft {
-    width: 68%;
-}
-	
-.splitRight {
-    margin-left: 5%;
-	}
 `;
