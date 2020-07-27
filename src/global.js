@@ -57,9 +57,10 @@ export const GlobalStyles = createGlobalStyle`
       transform: rotate(25deg);
     }
   }
+  
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'arya-triple-alt', 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -69,6 +70,33 @@ export const GlobalStyles = createGlobalStyle`
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  nav {
+    position: absolute;
+   
+ 
+    & ul {
+        list-style: none;
+        display: flex;
+         justify-content: space-evenly;
+         
+    }
+    & li {
+      margin: 20px;
+      font-size: 30px;
+    }
+    & li a {
+      color: #343078;
+      text-decoration: none;
+    }
+ }
+
+  
+  img {
+    
+    height: 50px;
+  
   }
   
   `
