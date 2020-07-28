@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledProfile = styled.div`
 
 #about{
-    height: 90vh;
+    grid-column: 1 / -1;
     margin-top:65px;
     font-family: arya-triple-alt, sans-serif;
     font-weight: 400;

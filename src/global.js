@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #EFFFFA;
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    height: 100vh;
+  
     justify-content: center;
     text-rendering: optimizeLegibility;
   };
@@ -43,6 +43,9 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    font-family: arya-triple-alt, sans-serif;
+    font-style: normal;
+  
   }
   
   .App-link {

@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useRef } from 'react';
+import React, { Suspense, useState, useRef, Fragment } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useOnClickOutside } from './hooks';
 import { GlobalStyles } from './global';
@@ -16,12 +16,14 @@ const App = () => {
 	useOnClickOutside(node, () => setOpen(false));
 	const [open, setOpen] = React.useState(false);
 	return (
+
+	<div>
+		
 		<Router>
 			<Suspense fallback={<div>Loading...</div>}>
 				<ThemeProvider theme={theme}>
 					<>
 						<GlobalStyles>
-						<div>
 							
 							<nav>
 
@@ -38,7 +40,7 @@ const App = () => {
 									</li>
 								</ul>
 							</nav>
-						</div>
+				
 						<div ref={node}>
 							<Burger aria-controls={menuId} />
 							<Menu open={open} setOpen={setOpen} />
@@ -52,11 +54,17 @@ const App = () => {
 
 					<Route path="/about" component={About} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/" component={Home} />
+					<Route path="/" exact component={Home} />
 
 				</Switch>
 			</Suspense>
 		</Router>
+		<Fragment>
+		
+			<About />
+			<Contact />
+		</Fragment>
+	</div>
 	)
 };
 

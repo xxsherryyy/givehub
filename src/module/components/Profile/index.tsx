@@ -8,6 +8,7 @@ import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 const Profile = () => {
 	return (
 		<StyledProfile>
+			<div>
 			<section id="about">
 				ABOUT
 				<div className="blurb">
@@ -46,7 +47,7 @@ const Profile = () => {
 					</div>
 				</div>
 			</section>
-
+</div>
 		</StyledProfile>
 	)
 }

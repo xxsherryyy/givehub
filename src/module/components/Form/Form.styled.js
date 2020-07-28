@@ -3,15 +3,15 @@ import styled from 'styled-components';
 export const StyledForm= styled.form`
 
 form {
+  grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 100px;
-    min-height: 400px;
+   
     padding: 20px 40px 40px 40px;
     border-radius: 6px;
     box-shadow: 0px 8px 36px #222;
-    background-color: #fefefe;
+    background-color: #fffff;
 }
 input {
     display: flex;
@@ -38,7 +38,7 @@ font-style: normal;;
   }
   select {
     display: block;
-    width: 100%;
+    width: 50vw;
     height: 5vh;
     font-family: continuo,sans-serif;
     font-weight: 400;
@@ -53,7 +53,7 @@ font-size: 24px;
   font-size: 24px;
   }
   button {
-    min-width: 100%;
+    
     cursor: pointer;
     margin-right: 0.25em;
     margin-top: 1.5em;
