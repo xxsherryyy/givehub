@@ -26,7 +26,7 @@ export const StyledProfile = styled.div`
 }
 
 .blurb {
-    font-family: gill-sans-nova,sans-serif;
+font-family: gill-sans-nova,sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size: 30px;
@@ -35,7 +35,6 @@ margin-right: 5vw;
 margin-bottom: 5vw;
 margin-top: 3vw;
 color: #ffff;
-
 line-height: 1.8;
 }
 
@@ -48,14 +47,15 @@ line-height: 1.8;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
-    @media screen and (max-width: 375px) {
-        width: 55px;
-        height 55px;
+    @media screen and (max-width: 480px) {
+        width: 20rem;
+        height 20rem;
     }
 }
 
 .sectionInner {
-    margin-bottom: 5vm;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .splitSection{
@@ -64,8 +64,21 @@ line-height: 1.8;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
-    @media screen and (max-width: 375px) {
-       font-size: 16px;
+   font-size: 4rem;
+   @media screen and (max-width: 480px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .linkedin {
+        display: none
     }
+    
+}
 }
 `;

@@ -24,17 +24,17 @@ const Profile = () => {
 						<div>
 							<img className="img-circle" src={chuks} alt="chuks"></img>
 							<div className="splitSection">Chuks</div>
-							<a target="_blank" href="https://www.linkedin.com/in/chuks-grinage"><Linkedin /></a>
+							<a target="_blank" href="https://www.linkedin.com/in/chuks-grinage"><Linkedin className="linkedin" /></a>
 						</div>
 						<div>
 						<img className="img-circle" src={sherry} alt="sherry"></img>
 						<div className="splitSection" >Sherry</div>
-						<a target="_blank" href="https://www.linkedin.com/in/sherry-x-yang"><Linkedin /></a>
+						<a target="_blank" href="https://www.linkedin.com/in/sherry-x-yang"><Linkedin className="linkedin" /></a>
 						</div>
 						<div>
 							<img className="img-circle" src={vivek} alt="vivek"></img>
 							<div className="splitSection">Vivek</div>
-							<a target="_blank" href="https://www.linkedin.com/in/vputtaparthi"><Linkedin /></a>
+							<a target="_blank" href="https://www.linkedin.com/in/vputtaparthi"><Linkedin className="linkedin" /></a>
 						</div>
 						
 
