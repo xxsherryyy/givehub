@@ -3,7 +3,7 @@ import { StyledProfile } from './Profile.styled';
 import chuks from '../../assets/chuks.jpeg';
 import vivek from '../../assets/vivek.jpeg';
 import sherry from '../../assets/sherry.jpeg';
-import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
+import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
 
 const Profile = () => {
 	return (
@@ -12,7 +12,7 @@ const Profile = () => {
 			<section id="about">
 				ABOUT
 				<div className="blurb">
-					<b>GiveHub</b> is a team of Dallasites who love their city and want to give back to our community in the most 21st century way. 
+					<b>GiveHub</b> is a team of <b>Dallasite web developers</b> who love their city and want to <b>give back to our community </b>in the most <b>21st century</b> way. 
 					We know our community is great at what they do, as a local shop, small business or community center. 
 					We understand that today's challenges wont be the same as tommorrow's in this ever changing digital age.
 					That's why we want to lend a hand (<i>or three</i>) in these tough times and help you keep doing what you do best.

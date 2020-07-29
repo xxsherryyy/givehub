@@ -1,23 +1,32 @@
 import { createGlobalStyle } from 'styled-components';
+import px2vw from "px2vw";
 
 export const GlobalStyles = createGlobalStyle`
-  html, body {
+:root {
+  font-size: ${px2vw(24)};
+    @media (min-width: 768px) {
+      font-size: ${px2vw(18)};
+    }
+    @media (min-width: 1024px) {
+      font-size: ${px2vw(16)};
+    }
+}  
+html, body {
     margin: 0;
     padding: 0;
-  }
-  *, *::after, *::before {
-    box-sizing: border-box;
-  }
-  body {
     align-items: center;
     background: #0D0C1D;
     color: #EFFFFA;
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
     justify-content: center;
     text-rendering: optimizeLegibility;
-  };
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
   .App {
     text-align: center;
   }
@@ -61,15 +70,6 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
@@ -94,11 +94,10 @@ export const GlobalStyles = createGlobalStyle`
       text-decoration: none;
     }
  }
-
   
   img {
     
-    height: 50px;
+    height: 50vw;
   
   }
   

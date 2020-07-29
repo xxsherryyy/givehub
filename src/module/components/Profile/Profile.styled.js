@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import px2vw from 'px2vw';
 
 export const StyledProfile = styled.div`
 
@@ -11,6 +12,12 @@ export const StyledProfile = styled.div`
     font-size: 50px;
     text-align: center;
     color: #d9fff0;
+    display: flex;
+    width: ${px2vw(320, 320)};
+    min-height: ${px2vw(200, 320)};
+    flex-direction: column;
+    padding: ${px2vw(20)};
+    margin: ${px2vw(20)};
 }
 
 #about [data-bigletter]:before{
@@ -41,6 +48,10 @@ line-height: 1.8;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
+    @media screen and (max-width: 375px) {
+        width: 55px;
+        height 55px;
+    }
 }
 
 .sectionInner {
@@ -53,5 +64,8 @@ line-height: 1.8;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
+    @media screen and (max-width: 375px) {
+       font-size: 16px;
+    }
 }
 `;
