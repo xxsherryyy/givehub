@@ -15,7 +15,7 @@ const Form = () => {
 			<div style={{ marginBottom: '1em' }}>
 				{
 					Object.entries(errors).map(([key, error]) => (
-						<small key={key} style={{ color: 'red' }}>{error.message}</small>
+						<div key={key} style={{ color: 'red' }}>{error.message}</div>
 					))
 				}
 			</div>
