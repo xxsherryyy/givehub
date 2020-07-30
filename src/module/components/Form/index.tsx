@@ -12,15 +12,12 @@ const Form = () => {
 	return (
 		<div style={{}}>
 			<h1>Business Contact Form</h1>
-					<div style={{ marginBottom: '1em'}}>
-			{
-				Object.entries(errors).map(([key, error]) => (
-					<>
-						<small style={{ color: 'red'}}>{error.message}</small>
-						<br />
-					</>
-				))
-			}
+			<div style={{ marginBottom: '1em' }}>
+				{
+					Object.entries(errors).map(([key, error]) => (
+						<small key={key} style={{ color: 'red' }}>{error.message}</small>
+					))
+				}
 			</div>
 			<StyledForm onSubmit={handleSubmit(onSubmit)}>
 				<label htmlFor="firstName">First Name:</label>
